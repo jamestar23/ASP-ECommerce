@@ -1,0 +1,27 @@
+﻿@model Product
+
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src=@Model.ImageUrl class="card-img" alt=@Model.Name />
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text"><small class="text-muted">@Model.Category.Name</small></p>
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text">$@Model.Fee</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a 
+                           asp-controller="ShoppingCart" 
+                           asp-action="AddToShoppingCart" 
+                           asp-route-productId=@Model.ProductId 
+                           class="btn btn-sm btn-outline-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

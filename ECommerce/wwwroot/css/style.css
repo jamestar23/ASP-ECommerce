@@ -1,0 +1,16 @@
+﻿body {
+    background-color: #f9f9f9
+}
+
+#navigation {
+    line-height: 3;
+    background-color: #d6eaff;
+    margin-bottom: 20px;
+}
+nav {
+    padding: 10px 0 !important;
+}
+
+.prod-item .card-body {
+    min-height: 190px;
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ECommerce website ASP.Net" />
+    <meta name="author" content="James Estrella" />
+
+    <title>@ViewBag.Title</title>
+
+    <link href="~/lib/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="~/lib/bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div id="navigation" class="container-fluid sticky-top">
+        <div class="row">
+            <div class="container">
+                <nav class="navbar justify-content-between">
+                    <strong><a class="navbar-brand">Ecommerce</a></strong>
+                    @*<form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>*@
+                </nav>
+            </div>
+        </div>
+     </div>
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
