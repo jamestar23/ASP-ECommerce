@@ -24,7 +24,7 @@ namespace ECommerce.Controllers
         //{
         //    return View();
         //}
-        
+
         public ViewResult List()
         {
             //ViewBag.SelectedCategory = _categoryRepository.AllCategories.ToList()[2].Name;
